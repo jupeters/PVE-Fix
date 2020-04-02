@@ -6,7 +6,7 @@ echo 1.去除登录时订阅提示
 echo 2.修复PVE6.x 没有购买订阅,无法更新问题
 echo 3.添加cpu温度/硬盘温度显示（只有一块硬盘）
 echo 4.添加cpu温度/硬盘温度显示（有两块硬盘）
-echo 5.添加硬盘温度插件自启动
+echo 5.添加网卡设置自启动
 echo
 read -p "请选择:" M
 echo 
@@ -302,7 +302,7 @@ cat > /etc/rc.local <<EOF
 # bits.
 #
 # By default this script does nothing. 
-hddtemp -d /dev/sd?
+ethtool -K enp0s31f6 tx off rx off
 exit 0
 EOF
 
