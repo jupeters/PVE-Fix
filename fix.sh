@@ -5,7 +5,7 @@ echo
 echo 1.去除登录时订阅提示
 echo 2.修复PVE6.x 没有购买订阅,无法更新问题
 echo 3.添加cpu温度
-echo 5.添加网卡设置自启动
+echo 4.添加网卡设置自启动
 echo
 read -p "请选择:" M
 echo 
@@ -117,7 +117,7 @@ else
 echo 您的cpu不在支持范围请联系作者
 fi
 
-elif [ "$M" = "5" ]
+elif [ "$M" = "4" ]
 then
 #脚本提示
 echo 已创建开机启动
