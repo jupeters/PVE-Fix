@@ -150,6 +150,7 @@ cat > /etc/rc.local <<EOF
 # bits.
 #
 # By default this script does nothing. 
+sleep 5
 ethtool -K enp0s31f6 tx off rx off
 exit 0
 EOF
