@@ -107,6 +107,9 @@ else
     echo 正在重启完毕
     systemctl restart pveproxy
 fi
+
+
+
 else
 echo 您的cpu不在支持范围请联系作者
 fi
