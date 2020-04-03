@@ -111,12 +111,6 @@ else
 echo 您的cpu不在支持范围请联系作者
 fi
 
-
-
-else
-echo 您的cpu不在支持范围请联系作者
-fi
-
 elif [ "$M" = "4" ]
 then
 #脚本提示
