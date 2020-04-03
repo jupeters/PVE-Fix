@@ -38,7 +38,7 @@ rm -rf sources.list
 
 #下载修复文件
 echo 正在下载新文件
-wget -q --no-check-certificate https://raw.githubusercontent.com/pkpkgtr1/PVE-Fix/master/update/sources.list
+wget -q --no-check-certificate https://raw.githubusercontent.com/jupeters/PVE-Fix/master/update/sources.list
 #设置权限
 chmod -R 0755 sources.list
 
@@ -52,7 +52,7 @@ cd /etc/apt/sources.list.d
 #备份文件
 rm -rf pve-enterprise.list
 #下载修复文件
-wget -q --no-check-certificate https://raw.githubusercontent.com/pkpkgtr1/PVE-Fix/master/update/pve-enterprise.list
+wget -q --no-check-certificate https://raw.githubusercontent.com/jupeters/PVE-Fix/master/update/pve-enterprise.list
 #设置权限
 chmod -R 0755 pve-enterprise.list
 #延迟运行
