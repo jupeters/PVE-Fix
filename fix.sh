@@ -18,7 +18,7 @@ cd /usr/share/javascript/proxmox-widget-toolkit
 echo 备份proxmoxlib.js
 cp  proxmoxlib.js proxmoxlib.js.backup
 echo 修改proxmoxlib.js
-sed -i.bak "s/data.status !== 'Active'/false/g"  /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
+sed -i.bak "s/data.status.toLowerCase() !== 'active'/false/g"  /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
 echo 重启服务
 systemctl restart pveproxy.service
 echo 修改完毕
