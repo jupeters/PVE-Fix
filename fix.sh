@@ -149,6 +149,7 @@ cat > /etc/rc.local <<EOF
 # By default this script does nothing. 
 sleep 5
 ethtool -K enp0s31f6 tx off rx off
+ethtool -K enp3s0 tx off rx off
 exit 0
 EOF
 
